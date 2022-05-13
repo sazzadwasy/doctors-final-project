@@ -10,19 +10,19 @@ const services = [
     {
         _id: 1,
         name: 'Fluoride Treatment',
-        description: '',
+        description: 'Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.',
         img: fluoride
     },
     {
         _id: 2,
         name: 'Cavity Filling',
-        description: '',
+        description: 'Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.',
         img: cavity
     },
     {
         _id: 3,
         name: 'Teeth Whitening',
-        description: '',
+        description: 'Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.',
         img: whitening
     },
 ]

@@ -4,7 +4,6 @@ import './App.css';
 import About from './Pages/Home/About/About';
 import Appointment from './Pages/Home/Appointment/Appointment';
 import ContactUs from './Pages/Home/Contact/ContactUs';
-import Footer from './Pages/Home/Footer/Footer';
 import Home from './Pages/Home/Home/Home';
 import Login from './Pages/Home/Login/Login';
 import Reviews from './Pages/Home/Reviews/Reviews';
@@ -12,7 +11,7 @@ import Navbar from './Pages/Shared/Navbar.js/Navbar';
 
 function App() {
   return (
-    <div className="App">
+    <div className="max-w-7xl mx-auto">
       <Navbar></Navbar>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
@@ -23,7 +22,6 @@ function App() {
         <Route path='/contactus' element={<ContactUs></ContactUs>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
       </Routes>
-      <Footer></Footer>
     </div>
   );
 }
