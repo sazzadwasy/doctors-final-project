@@ -6,7 +6,7 @@ const Banner = () => {
     return (
         <div className="hero min-h-screen">
             <div className="hero-content flex-col lg:flex-row-reverse">
-                <img className="w-[374px] lg:max-w-lg" src={chair} alt='' />
+                <img className="lg:max-w-lg" src={chair} alt='' />
                 <div className="mb-24">
                     <h1 className="text-5xl font-bold">Your new smile starts
                         <br /><span className="pt-4">here</span></h1>
