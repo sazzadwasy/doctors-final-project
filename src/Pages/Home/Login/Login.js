@@ -3,10 +3,12 @@ import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-fireba
 import auth from '../../../firebase.init';
 import { useForm } from "react-hook-form";
 import Loading from '../../Shared/Loading/Loading';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 
 const Login = () => {
+    const navigate = useNavigate()
+    const location = useLocation()
     const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
     const [
         signInWithEmailAndPassword,
@@ -15,10 +17,11 @@ const Login = () => {
         error,
     ] = useSignInWithEmailAndPassword(auth);
     const { register, formState: { errors }, handleSubmit } = useForm();
+    let from = location.state?.from?.pathname || "/";
     let signInError;
 
     if (user || gUser) {
-        console.log(user, gUser)
+        navigate(from, { replace: true });
 
     }
     if (loading || gLoading) {
